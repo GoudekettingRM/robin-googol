@@ -76,7 +76,7 @@ header nav ul li {
 
 header nav ul li a,
 footer a,
-.backToTopContainer a {
+.backToTopContainer {
   color: black;
   text-decoration: none;
 }
@@ -90,7 +90,7 @@ footer a:hover {
   color: grey;
 }
 
-.backToTopContainer a:hover {
+.backToTopContainer:hover {
   text-decoration: underline;
 }
 
@@ -103,6 +103,10 @@ footer a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -113,7 +117,7 @@ footer a:hover {
   padding: 12px 12px;
 }
 
-.backToTopContainer a span {
+.backToTopContainer span {
   display: block;
 }
 
@@ -161,6 +165,10 @@ footer div {
 
 footer div a {
   margin-right: 24px;
+}
+
+form label {
+  display: block;
 }
 
 .lds-dual-ring {
