@@ -144,6 +144,11 @@ footer {
   padding: 12px;
 }
 
+footer.fixed {
+  position: fixed;
+  bottom: 0;
+}
+
 footer div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,13 +177,26 @@ footer div a {
   border-radius: 50%;
   border: 6px solid #ccc;
   border-color: #ccc transparent #ccc transparent;
+  -webkit-animation: lds-dual-ring 1.2s linear infinite;
   animation: lds-dual-ring 1.2s linear infinite;
 }
-@keyframes lds-dual-ring {
+@-webkit-keyframes lds-dual-ring {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes lds-dual-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
