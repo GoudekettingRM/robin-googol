@@ -33,7 +33,7 @@ class Main {
       this.main.getBoundingClientRect().bottom <= 10 * window.innerHeight &&
       this.performedLoadsCount < this.requiredLoads
     ) {
-      this.loadMoreRobins();
+      setTimeout(() => this.loadMoreRobins(), 0);
     } else if (this.performedLoadsCount === this.requiredLoads) {
       const end = document.createElement('h2');
       end.innerHTML = 'You passed a Googol of Robins!';
@@ -43,11 +43,13 @@ class Main {
   }
 
   loadMoreRobins() {
+    const spanWrapper = document.createElement('span');
     for (let i = 0; i < this.perLoad; i++) {
       const span = document.createElement('span');
       span.innerHTML += 'Robin ';
-      this.main.appendChild(span);
+      spanWrapper.appendChild(span);
     }
+    this.main.appendChild(spanWrapper);
     this.incrementPerformedLoadCount();
   }
 
