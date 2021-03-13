@@ -208,3 +208,13 @@ form label {
     transform: rotate(360deg);
   }
 }
+
+.lds-dual-ring.fullScreen {
+  width: 100vw;
+  height: 100vh;
+}
+.lds-dual-ring.fullScreen:after {
+  position: fixed;
+  left: calc(50% - 36px);
+  top: calc(50% - 36px);
+}
