@@ -12,11 +12,11 @@ class Main {
 
   constructor(main) {
     this.main = main;
-    this.Googol = Math.pow(10, 100);
-    this.perLoad = 5000;
+    this.Googol = 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000n;
+    this.perLoad = 5000n;
     this.requiredLoads = this.Googol / this.perLoad;
 
-    this.performedLoadsCount = 0;
+    this.performedLoadsCount = 0n;
 
     this.loadMoreRobins();
   }
@@ -52,7 +52,7 @@ class Main {
   }
 
   incrementPerformedLoadCount() {
-    this.performedLoadsCount += 1;
+    this.performedLoadsCount += 1n;
   }
 }
 
