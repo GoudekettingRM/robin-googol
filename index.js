@@ -47,7 +47,7 @@ class Main {
     for (let i = 0; i < this.perLoad / 20n; i++) {
       const span = document.createElement('span');
       span.innerHTML +=
-        'Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin ';
+        'Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin ';
       spanWrapper.appendChild(span);
     }
     this.main.appendChild(spanWrapper);

@@ -34,11 +34,15 @@ class ChapterDownload {
       ChapterDownloadConfig.loadingPlaceholder,
     );
 
-    for (let i = 0; i < 5000; i++) {
+    const wrapper = document.createElement('span');
+    for (let i = 0; i < 5000 / 20; i++) {
       const span = document.createElement('span');
-      span.innerHTML += 'Robin ';
-      this.chapterContainer.appendChild(span);
+      span.innerHTML +=
+        'Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin ';
+      wrapper.appendChild(span);
     }
+
+    this.chapterContainer.appendChild(wrapper);
   }
 
   initializeBehavior() {
