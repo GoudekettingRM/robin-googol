@@ -44,9 +44,10 @@ class Main {
 
   loadMoreRobins() {
     const spanWrapper = document.createElement('span');
-    for (let i = 0; i < this.perLoad; i++) {
+    for (let i = 0; i < this.perLoad / 20n; i++) {
       const span = document.createElement('span');
-      span.innerHTML += 'Robin ';
+      span.innerHTML +=
+        'Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin Robin ';
       spanWrapper.appendChild(span);
     }
     this.main.appendChild(spanWrapper);
