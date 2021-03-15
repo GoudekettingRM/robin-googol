@@ -12,7 +12,7 @@ class Main {
 
   constructor(main) {
     this.main = main;
-    this.Googol = 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000n;
+    this.Googol = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000n;
     this.perLoad = 5000n;
     this.requiredLoads = this.Googol / this.perLoad;
 
@@ -27,6 +27,7 @@ class Main {
       debounce(() => this.nextAction(), 50),
     );
   }
+
 
   nextAction() {
     if (

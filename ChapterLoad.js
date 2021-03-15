@@ -18,7 +18,7 @@ class ChapterDownload {
   constructor(form) {
     this.form = form;
     this.inputField = form.querySelector('input[type=number]');
-    this.Googol = 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000n;
+    this.Googol = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000n;
 
     this.maxChapterNumber = this.Googol / 5000n; // One googol / 5000 words per chapter
 
